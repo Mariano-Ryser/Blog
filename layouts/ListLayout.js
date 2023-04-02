@@ -4,6 +4,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { useState } from 'react'
 import Pagination from '@/components/Pagination'
 import formatDate from '@/lib/utils/formatDate'
+import style from '../styles/style.module.css'
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
   const [searchValue, setSearchValue] = useState('')
@@ -20,10 +21,16 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          {/* TITULO */}
+          <h1
+            className={style.h1}
+            //  className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14"
+          >
             {title}
           </h1>
           <div className="relative max-w-lg">
+            {/* BUSCADOR DE POSTEOS */}
+
             <input
               aria-label="Search articles"
               type="text"
@@ -41,7 +48,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth={2}
+                strokeWidth={4}
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
               />
             </svg>
@@ -57,7 +64,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                   <dl>
                     <dt className="sr-only">Published on</dt>
                     <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                      <time dateTime={date}>{formatDate(date)}</time>
+                      {/* <time dateTime={date}>{formatDate(date)}</time> */}
                     </dd>
                   </dl>
                   <div className="space-y-3 xl:col-span-3">

@@ -1,3 +1,7 @@
+<!-- https://vercel.com/new/templates/next.js/tailwind-css-starter-blog -->
+
+TUTORIAL BLOG
+
 ![tailwind-nextjs-banner](/public/static/images/twitter-card.png)
 
 # Tailwind Nextjs Starter Blog

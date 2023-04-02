@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Link from './Link'
 import headerNavLinks from '@/data/headerNavLinks'
+import style from '../styles/style.module.css'
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
@@ -72,7 +73,7 @@ const MobileNav = () => {
                 className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
                 onClick={onToggleNav}
               >
-                {link.title}
+                {link.title} <span className={style.p}>{link.href}</span>
               </Link>
             </div>
           ))}

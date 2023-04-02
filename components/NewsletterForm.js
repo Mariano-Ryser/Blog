@@ -62,7 +62,7 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
             type="submit"
             disabled={subscribed}
           >
-            {subscribed ? 'Thank you!' : 'Sign up'}
+            {subscribed ? 'Gracias!' : 'Sign up'}
           </button>
         </div>
       </form>

@@ -25,7 +25,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
+        sans: ['monospace', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: colors.teal,
@@ -34,7 +34,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.700'),
+            color: theme('colors.gray.600'),
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
@@ -45,7 +45,7 @@ module.exports = {
             h1: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.900'),
+              color: theme('colors.gray.800'),
             },
             h2: {
               fontWeight: '700',
@@ -57,7 +57,7 @@ module.exports = {
               color: theme('colors.gray.900'),
             },
             'h4,h5,h6': {
-              color: theme('colors.gray.900'),
+              color: theme('colors.green.900'),
             },
             pre: {
               backgroundColor: theme('colors.gray.800'),
@@ -78,7 +78,7 @@ module.exports = {
               content: 'none',
             },
             details: {
-              backgroundColor: theme('colors.gray.100'),
+              backgroundColor: theme('colors.blue.100'),
               paddingLeft: '4px',
               paddingRight: '4px',
               paddingTop: '2px',
@@ -113,19 +113,19 @@ module.exports = {
             h1: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.100'),
+              color: theme('colors.yellow.500'),
             },
             h2: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.100'),
+              color: theme('colors.green.500'),
             },
             h3: {
               fontWeight: '600',
-              color: theme('colors.gray.100'),
+              color: theme('colors.yellow.300'),
             },
             'h4,h5,h6': {
-              color: theme('colors.gray.100'),
+              color: theme('colors.green.400'),
             },
             pre: {
               backgroundColor: theme('colors.gray.800'),

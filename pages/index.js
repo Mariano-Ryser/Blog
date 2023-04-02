@@ -4,6 +4,7 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
+import style from '../styles/style.module.css'
 
 import NewsletterForm from '@/components/NewsletterForm'
 
@@ -19,12 +20,19 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
+
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Latest
+          <h1
+            className={style.titleHeader}
+            // className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14"
+          >
+            # $... "="
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+          <p
+            className={style.description}
+            // className="text-lg leading-7 text-gray-500 dark:text-gray-400"
+          >
             {siteMetadata.description}
           </p>
         </div>
@@ -39,7 +47,10 @@ export default function Home({ posts }) {
                     <dl>
                       <dt className="sr-only">Published on</dt>
                       <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                        <time dateTime={date}>{formatDate(date)}</time>
+                        {/* TIEMPO */}
+                        <p className={style.time}>
+                          <time dateTime={date}>{formatDate(date)}</time>
+                        </p>
                       </dd>
                     </dl>
                     <div className="space-y-5 xl:col-span-3">
@@ -69,7 +80,7 @@ export default function Home({ posts }) {
                           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                           aria-label={`Read "${title}"`}
                         >
-                          Read more &rarr;
+                          <span className={style.link}>Leer mas &rarr;</span>
                         </Link>
                       </div>
                     </div>
@@ -87,14 +98,14 @@ export default function Home({ posts }) {
             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             aria-label="all posts"
           >
-            All Posts &rarr;
+            <span className={style.link}>Todos los post &rarr;</span>
           </Link>
         </div>
       )}
+
+      {/* SUBSCRIPCION FUTURA */}
       {siteMetadata.newsletter.provider !== '' && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
+        <div className="flex items-center justify-center pt-4">{/* <NewsletterForm /> */}</div>
       )}
     </>
   )

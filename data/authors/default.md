@@ -1,16 +1,30 @@
 ---
-name: Tails Azimuth
+name: Mariano Ryser
 avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+occupation: Programo y weiter Lernen...
+company: Zurich Suiza
+# email: address@yoursite.com
+# twitter: https://twitter.com/RyserMariano
+linkedin: https://www.linkedin.com/in/mariano-ryser-073731221/
+github: https://github.com/Mariano-Ryser
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+Student in Zurich.
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
+Actualmente lerne ich in der Schweiz wo ich seit 4 jahre ungeefart wohne.
+ich komme aus Argentinien und mini mutter sprache is Spanish.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Sometimes lerne ich auch English, but das is ein grosses problme, wiel ich alles mishee.
+en fin, was bruchen Sie aqui?
+
+Soll Ich wechsel mein Keyboard? ...
+
+### Mi actual stack tecnologico.
+
+- Git
+- Github
+- Next JS, Jsx, TypeScrip, CSS
+- Node JS
+- Mongo DB
+
+Musica, Naturaleza y Deporte son los complementos en el camino.

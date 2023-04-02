@@ -1,0 +1,1 @@
+estos archivos van en la carpeta data/post del proyecto blogi

@@ -1,5 +1,6 @@
 import Image from './Image'
 import Link from './Link'
+import style from '../styles/style.module.css'
 
 const Card = ({ title, description, imgSrc, href }) => (
   <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>
@@ -38,14 +39,14 @@ const Card = ({ title, description, imgSrc, href }) => (
             title
           )}
         </h2>
-        <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
+        <p className="prose mb-4 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
         {href && (
           <Link
             href={href}
-            className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            className="hover: color-green-600 text-base  font-medium leading-6 dark:hover:text-green-400"
             aria-label={`Link to ${title}`}
           >
-            Learn more &rarr;
+            <span className={style.link}>Vea un poco mas &rarr;</span>
           </Link>
         )}
       </div>

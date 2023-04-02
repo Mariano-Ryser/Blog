@@ -1,0 +1,90 @@
+---
+title: 'Object-TypsScript'
+date: 2021-08-07T15:32:14Z
+lastmod: '2021-02-01'
+tags: ['next-js']
+draft: false
+summary: 'An overview of the new features released in v1 - code block copy, multiple authors, frontmatter layout and more'
+layout: PostSimple
+bibliography: references-data.bib
+canonicalUrl: https://tailwind-nextjs-starter-blog.vercel.app/blog/new-features-in-v1/
+---
+
+## ...
+
+Para crear un producto utilizando clases con TypeScript, puedes seguir los siguientes pasos:
+
+Definir la clase: primero, define la clase que representará tu producto. Puedes hacerlo utilizando la sintaxis de TypeScript, que es muy similar a la de JavaScript. Por ejemplo, si quisieras crear una clase para un producto de electrónica, podrías hacerlo así:
+
+```jsx
+class ProductoElectronico {
+  nombre: string
+  precio: number
+  descripcion: string
+
+  constructor(nombre: string, precio: number, descripcion: string) {
+    this.nombre = nombre
+    this.precio = precio
+    this.descripcion = descripcion
+  }
+}
+```
+
+Crear objetos de la clase: una vez que has definido la clase, puedes crear objetos de la misma utilizando la palabra clave new seguida del nombre de la clase y los parámetros que se necesiten para inicializar los atributos. Por ejemplo:
+
+```jsx
+{
+  const producto1 = new ProductoElectronico(
+    'Laptop',
+    1200,
+    'Laptop ultraligera con procesador Intel Core i7 y pantalla de alta resolución.'
+  )
+  const producto2 = new ProductoElectronico(
+    'Smartphone',
+    800,
+    'Smartphone con cámara de alta resolución y batería de larga duración.'
+  )
+}
+```
+
+Acceder a los atributos y métodos: una vez que has creado los objetos de la clase, puedes acceder a sus atributos y métodos utilizando la sintaxis de punto. Por ejemplo:
+
+```jsx
+{
+  console.log(producto1.nombre) // "Laptop"
+  console.log(producto2.precio) // 800
+}
+```
+
+También puedes definir métodos dentro de la clase para realizar acciones sobre los objetos de la misma, como por ejemplo:
+
+```jsx
+{
+  class ProductoElectronico {
+    nombre: string
+    precio: number
+    descripcion: string
+
+    constructor(nombre: string, precio: number, descripcion: string) {
+      this.nombre = nombre
+      this.precio = precio
+      this.descripcion = descripcion
+    }
+
+    mostrarInformacion(): void {
+      console.log(
+        `El producto ${this.nombre} tiene un precio de ${this.precio} y su descripción es: ${this.descripcion}`
+      )
+    }
+  }
+
+  const producto1 = new ProductoElectronico(
+    'Laptop',
+    1200,
+    'Laptop ultraligera con procesador Intel Core i7 y pantalla de alta resolución.'
+  )
+  producto1.mostrarInformacion() // "El producto Laptop tiene un precio de 1200 y su descripción es: Laptop ultraligera con procesador Intel Core i7 y pantalla de alta resolución."
+}
+```
+
+Siguiendo estos pasos, podrás crear y manipular objetos de una clase en TypeScript para representar tu producto.
