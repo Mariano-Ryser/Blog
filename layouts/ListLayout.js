@@ -28,9 +28,9 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           >
             {title}
           </h1>
-          <div className="relative max-w-lg">
-            {/* BUSCADOR DE POSTEOS */}
 
+          {/* BUSCADOR DE POSTEOS */}
+          <div className="relative max-w-lg">
             <input
               aria-label="Search articles"
               type="text"
@@ -54,6 +54,8 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             </svg>
           </div>
         </div>
+
+        {/* MAPEO DE POSTEOS*/}
         <ul>
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((frontMatter) => {
@@ -80,7 +82,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                         ))}
                       </div>
                     </div>
-                    <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                    <div className="prose max-w-none text-gray-900 dark:text-gray-300">
                       {summary}
                     </div>
                   </div>

@@ -28,3 +28,10 @@ Soll Ich wechsel mein Keyboard? ...
 - Mongo DB
 
 Musica, Naturaleza y Deporte son los complementos en el camino.
+
+## Que es este sitio web? ...
+
+- dejame contarte un poco mas about me...
+
+esta Web site o Portafolio no es mas que un lugar donde puedo compartir, escribir y leer, temas de interes personal..
+no me profesionalizo en ningun area, siendo que voy investigando sobre la marcha . . .
